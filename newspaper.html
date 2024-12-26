@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Newspaper</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            text-align: center;
+            background-color: #444;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+        .main-content {
+            flex: 70%;
+            margin-right: 20px;
+        }
+        .sidebar {
+            flex: 30%;
+        }
+        .article {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .article img {
+            max-width: 100%;
+            height: auto;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Daily News</h1>
+        <p>Your trusted source for daily updates</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">World</a>
+        <a href="#">Politics</a>
+        <a href="#">Sports</a>
+        <a href="#">Entertainment</a>
+    </nav>
+
+    <div class="container">
+        <div class="main-content">
+            <div class="article">
+                <h2>Headline News Article</h2>
+                <p><strong>By John Doe</strong> | December 26, 2024</p>
+                <img src="https://via.placeholder.com/600x300" alt="News image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt metus at est tempor, non tincidunt odio interdum. Sed pretium tincidunt ante, et consectetur risus pharetra a. Proin ut velit sed erat vehicula posuere nec sed purus.</p>
+            </div>
+
+            <div class="article">
+                <h2>Another Important News</h2>
+                <p><strong>By Jane Smith</strong> | December 26, 2024</p>
+                <img src="https://via.placeholder.com/600x300" alt="News image">
+                <p>Nulla facilisi. Integer ut arcu sollicitudin, posuere sem in, ultricies ipsum. Vestibulum eget risus auctor, tempus urna sed, euismod felis. In vel magna ac odio feugiat tincidunt. Quisque maximus tincidunt augue, id mollis nulla dictum at.</p>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="article">
+                <h3>Breaking News</h3>
+                <ul>
+                    <li><a href="#">Breaking news story 1</a></li>
+                    <li><a href="#">Breaking news story 2</a></li>
+                    <li><a href="#">Breaking news story 3</a></li>
+                </ul>
+            </div>
+
+            <div class="article">
+                <h3>Recent Articles</h3>
+                <ul>
+                    <li><a href="#">Recent article 1</a></li>
+                    <li><a href="#">Recent article 2</a></li>
+                    <li><a href="#">Recent article 3</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Daily News. All rights reserved.</p>
+    </footer>
+</body>
+</html>
